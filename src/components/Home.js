@@ -1,8 +1,12 @@
+import { useNavigate } from "react-router-dom"
+
 const Home = () => {
+  const navigate = useNavigate()
   return (
-    <div>
+    <section className="column">
       Home Page
-    </div>
+      <button onClick={() => navigate("navigated")} style={{marginTop: "20px"}} className="combtn white-border-white">Navigate</button>
+    </section>
   )
 }
 

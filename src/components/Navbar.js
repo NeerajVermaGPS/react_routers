@@ -1,10 +1,17 @@
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 const Navbar = () => {
+  const navBtnStyles = ({isActive}) => {
+    return {
+        background: isActive ? "white" : "transparent",
+        color: isActive ? "black" : "white"
+    }
+  }
   return (
-    <nav>
-      <Link to='/' className='combtn white-border-white'>Home</Link>
-      <Link to='/about' className='combtn white-border-white'>About</Link>
+    <nav className='primary-nav'>
+      <NavLink to='/' className='combtn white-border-transparent' style={navBtnStyles}>Home</NavLink>
+      <NavLink to='/about' className='combtn white-border-transparent' style={navBtnStyles}>About</NavLink>
+      <NavLink to='/products' className='combtn white-border-transparent' style={navBtnStyles}>Products</NavLink>
     </nav>
   )
 }

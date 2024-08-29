@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=ABeeZee");
 @import url("https://fonts.googleapis.com/css?family=Alexandria");
 body,
-html {
+html, #root {
   width: 100%;
   height: 100%;
   margin: 0;
@@ -25,7 +25,7 @@ code {
     monospace;
 }
 
-nav {
+.primary-nav {
   width: 100%;
   padding: 20px 0;
   background-color: rgb(15, 19, 20);
@@ -80,6 +80,11 @@ a {
 .w-90 {
   width: 90%;
 }
+.mv-10 {margin: 10px 0 !important;}
+.mh-10 {margin: 0 10px !important;}
+.m-15 {margin: 15px !important;}
+.pv-10 {padding: 10px 0 !important;}
+.ph-10 {padding: 10px !important;}
 .comfont {
   font-family: var(--font2);
   letter-spacing: 1px;
@@ -122,7 +127,7 @@ a {
   font-weight: bold;
 }
 section {
-  min-height: 100%;
+  min-height: calc(100% - 60px);
   height: auto;
   width: 100%;
   display: flex;
@@ -139,6 +144,12 @@ section {
   background: white;
   color: black;
 }
+
+/* .active {
+  background: white;
+  color: black;
+} */
+
 .white-border-white {
   border: 2px solid white;
     background: white;
