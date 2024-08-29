@@ -1,13 +1,150 @@
-body {
+@import url("https://fonts.googleapis.com/css?family=ABeeZee");
+@import url("https://fonts.googleapis.com/css?family=Alexandria");
+body,
+html {
+  width: 100%;
+  height: 100%;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Alexandria";
+  padding: 0;
+  scroll-behavior: smooth;
+  background-color: rgb(25 32 35);
+  color: white;
+  user-select: none;
+  -webkit-user-select: none;
+}
+* {
+  box-sizing: border-box;
+}
+img {
+  -webkit-user-drag: none;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+nav {
+  width: 100%;
+  padding: 20px 0;
+  background-color: rgb(15, 19, 20);
+  box-shadow: 0 2px 14px 0px black;
+}
+
+button, input {
+  font-family: "Alexandria";
+  outline: none;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.full-h {
+  height: 100%;
+}
+.full-w {
+  width: 100%;
+}
+.full-hw {
+  width: 100%;
+  height: 100%;
+}
+a {
+  text-decoration: none;
+  width: fit-content;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.no-overflow{
+  overflow: hidden;
+}
+.absolute_00{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.fixed_00{
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.w-90 {
+  width: 90%;
+}
+.comfont {
+  font-family: var(--font2);
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+.comicon {
+  height: 11px;
+  margin-right: 5px;
+}
+.combtn {
+  margin: 10px;
+    padding: 10px 15px;
+    outline: none;
+    font-size: 13px;
+    font-family: var(--font6);
+    letter-spacing: 0.8px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.combtn img {
+  width: 20px;
+  margin-right: 6px;
+  transition: 0.4s;
+}
+.combtn:hover img{
+  filter: invert(1);
+}
+.inline-button {
+  background-color: transparent;
+  border: 1px solid rgb(138, 138, 138);
+  color: rgb(208, 208, 208);
+  margin: 0;
+  margin-top: 5px;
+  padding: 5px 8px;
+  border-radius: 3px;
+}
+.inline-button:hover {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+}
+section {
+  min-height: 100%;
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.white-border-transparent {
+  border: 2px solid white;
+    background: transparent;
+    color: white;
+}
+.white-border-transparent:hover {
+  background: white;
+  color: black;
+}
+.white-border-white {
+  border: 2px solid white;
+    background: white;
+    color: black;
+}
+.white-border-white:hover {
+  background: transparent;
+  color: white;
 }
