@@ -145,10 +145,10 @@ section {
   color: black;
 }
 
-/* .active {
+.active {
   background: white;
   color: black;
-} */
+}
 
 .white-border-white {
   border: 2px solid white;
